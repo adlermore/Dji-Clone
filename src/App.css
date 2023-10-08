@@ -114,7 +114,7 @@ video::-webkit-media-controls-panel {
 }
 
 
-.wrapper {
+/* .wrapper {
   background: linear-gradient(to right, #e67e22, #e74c3c);
   height: 100vh;
   display: flex;
@@ -242,4 +242,4 @@ button:active {
 .example_weather{
 
   padding-top: 600px;
-}
+} */
