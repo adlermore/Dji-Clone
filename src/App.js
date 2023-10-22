@@ -1,54 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react';
 import logo from './logo.svg';
 import './App.css';
-// import Form from './components/Form';
-// import Weather from './components/Weather';
-
-// const API_KEY = "b2682e870fe5bb03a319af93166e46eb";
 
 function App() {
+
   const [offset, setOffset] = useState(0);
-  // const [whaterApi , setWhaterApi] = useState({
-  //   temperature: undefined,
-  //   city: undefined,
-  //   country: undefined,
-  //   humidity: undefined,
-  //   description: undefined,
-  //   error: undefined  
-  // })
-
-  // const getWeather = async (e) => {
-  //   e.preventDefault();
-  //   const city = e.target.elements.city.value;
-  //   const country = e.target.elements.country.value;
-
-  //   console.log('city',  city ,'country' , country);
-  //   const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`);
-  //   const data = await api_call.json();
-
-
-  //   if(city && country) {
-  //     console.log(data);
-  //     setWhaterApi({
-  //       temperature: data.main.temp,
-  //       city: data.name,
-  //       country: data.sys.country,
-  //       humidity: data.main.humidity,
-  //       description: data.weather[0].description,
-  //       error: ""
-  //     });
-  //   }else {
-  //     setWhaterApi({
-  //       temperature: undefined,
-  //       city: undefined,
-  //       country: undefined,
-  //       humidity: undefined,
-  //       description: undefined,
-  //       error: "Please enter the city value"
-  //     });
-  //   }
-  // }
-
   const videoWrapper = useRef(null);
   const video = useRef(null);
   const videoCount = useRef(null);
@@ -72,8 +28,6 @@ function App() {
     }
   }
 
-
-
   let videSizeChange = () => {
     if (window.innerWidth - 200 > video.current.style.width.replace(/[^0-9]/g, '') && offset < 700) {
       video.current.style.width = 632 + offset - 274 + 'px';
@@ -81,7 +35,6 @@ function App() {
       console.log(offset);
     }
   }
-
 
   useEffect(() => {
     const onScroll = () => setOffset(window.scrollY);
