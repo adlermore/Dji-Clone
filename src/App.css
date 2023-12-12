@@ -6,7 +6,6 @@
   text-align: center;
 }
 
-
 .App-logo {
   height: 45px;
   pointer-events: none;
@@ -17,16 +16,18 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-body{
+
+body {
   min-height: 300vh;
   background: black;
 }
-.style__description{
+
+.style__description {
 
   font-weight: 400;
   letter-spacing: -0.03em;
-  font-size: 16px!important;
-  line-height: 24px!important;
+  font-size: 16px !important;
+  line-height: 24px !important;
   text-align: center;
   width: 796px;
   margin: 0 auto 48px;
@@ -47,10 +48,11 @@ body{
 .App-link {
   color: #61dafb;
 }
-h4{
-  font-size: 32px!important;
-  line-height: 36px!important;
-  margin-bottom: 16px!important;
+
+h4 {
+  font-size: 32px !important;
+  line-height: 36px !important;
+  margin-bottom: 16px !important;
   font-weight: 500;
   letter-spacing: -0.03em;
   margin: 0px auto 24px;
@@ -60,7 +62,8 @@ h4{
   padding: 88px 0px 0px;
 
 }
-.video_wrapper{
+
+.video_wrapper {
   pointer-events: none;
   transform: translate(0px, 0px);
   overflow: hidden;
@@ -71,12 +74,12 @@ h4{
   top: 0;
 }
 
-.fixed{
+.fixed {
   position: fixed !important;
   top: 38px;
-  
 }
-.video-count{
+
+.video-count {
   color: white;
   font-size: 85px;
   position: fixed !important;
@@ -87,15 +90,16 @@ h4{
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.show{
+
+.show {
   font-size: 155px;
   opacity: 0.9 !important;
 }
+
 .video_wrapper video {
   width: 632px;
   height: auto;
   border-radius: 6px;
-
 }
 
 video::-webkit-media-controls-panel {
@@ -104,10 +108,13 @@ video::-webkit-media-controls-panel {
 }
 
 @keyframes App-logo-spin {
+
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+
 }
