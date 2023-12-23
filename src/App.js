@@ -55,7 +55,7 @@ function App() {
         <h4 className="style__headline___1p-SV">155° Super-Wide FOV</h4>
         <p className="style__description" >Most camera drones offer, at best, an 84° FOV. DJI Avata kicks things up a gear with its super-wide 155° FOV. <sup>[7]</sup> This expanded FOV is closer to that of what we see with our own eyes, creating impactful, hyper-immersive visuals.</p></div>
       <div className="video-count" ref={videoCount} >83°</div>
-      <div className="video_wrapper" id="video_wrapper" ref={videoWrapper}>
+      {/* <div className="video_wrapper" id="video_wrapper" ref={videoWrapper}>
         <div className="video-player-box">
           <video controls autoPlay={true} loop muted playsInline ref={video}>
             <source type="video/webm" data-layzr-src="" src="" />
@@ -64,7 +64,7 @@ function App() {
               src="https://dji-official-fe.djicdn.com/reactor/assets/_next/static/videos/5b7ada02-52e3-4141-9286-6ba40e521fd6.mp4" />
           </video>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

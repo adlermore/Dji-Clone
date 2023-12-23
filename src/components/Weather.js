@@ -7,7 +7,7 @@ const Weather = props => (
                 <span className="weather__value"> {props.city}, {props.country}</span>
             </p>
         }
-        {
+        {/* {
             props.temperature && <p className="weather__key">temperature: 
                 <span className="weather__value"> {props.temperature}</span>
             </p>
@@ -21,7 +21,7 @@ const Weather = props => (
             props.description && <p className="weather__key">Conditions: 
                 <span className="weather__value"> {props.description} </span>
             </p>
-        }
+        } */}
         {
             props.error && <p className="weather__error">Error: 
                 {props.error}
